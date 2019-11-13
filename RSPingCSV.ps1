@@ -34,7 +34,6 @@ if ($TPath -eq $false) {
     $excel.DisplayAlerts = $false
 
     $WorkBook = $excel.Workbooks.Open($File)
-    #    $Global:Synchash.WorkSheet = $Global:Synchash.excel.Worksheets.Item("Printer Tracker")
     #    $Global:Synchash.WorkSheet.SaveAs($ExportPath, 6)
     $WorkBook.SaveAs($ExportPath, 6)
     $WorkBook.Close()
